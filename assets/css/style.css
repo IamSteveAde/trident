@@ -1488,6 +1488,10 @@ h6 {
     padding-right: 30px;
 
   }
+  .now{
+    width: 95%;
+    margin-left: 20px;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -1501,4 +1505,18 @@ h6 {
 .notmobile{
   display: none;
   color: #c72127;
+}
+.pattern-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 90vw;
+  height: 100vh;
+  background-image: url('/assets/images/pattern.png'); /* Make sure the path is correct */
+  background-repeat: no-repeat;
+  background-size: contain; /* or 'cover' if you want full stretch */
+  z-index: -1;
+  pointer-events: none; /* Prevents it from blocking clicks */
+  background-position: center;
+  opacity: 0.6;
 }
