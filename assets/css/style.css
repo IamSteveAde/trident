@@ -1468,6 +1468,10 @@ h6 {
   .yt_banner_wrap{
     height: 30vh;
   }
+  .btn{
+    font-size: 10px;
+    font-weight: 100px;
+  }
   .opp{
     margin-top: 20px;
     padding-top: 20px;
