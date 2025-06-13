@@ -28,6 +28,18 @@ Buy Pro
   --nav-inverse: #000000;
   --nav-inverse-alt: #ffffff;
 }
+.bus1{
+  background-color: #c7212715;
+}
+.bus2{
+  background-color: #21c74222;
+}
+.bus3{
+  background-color: #2187c71f;
+}
+.bus4{
+  background-color: #c7822125;
+}
 .redd{
   color: fff;
 }
@@ -1259,7 +1271,7 @@ h6 {
   .xS_newsCard {
     flex: 0 0 calc(33.333% - 2rem);
     margin: 0 1rem;
-    background: white;
+    
     padding: 1.5rem;
     border-radius: 12px;
     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
@@ -1290,7 +1302,7 @@ h6 {
     display: inline-block;
     margin-top: 1rem;
     padding: 0.5rem 1rem;
-    background-color: #111;
+    background-color: #c72127;
     color: #fff;
     border-radius: 5px;
     font-size: 0.85rem;
@@ -1318,7 +1330,7 @@ h6 {
   }
 
   .xS_activeDot {
-    background-color: #111;
+    background-color: #c72127;
   }
   .yt_banner_wrap {
     position: relative;
@@ -1423,19 +1435,70 @@ h6 {
       padding: 0.5rem 1rem;
     }
   }
-  
+  .animated-hero-image {
+  animation: heroMove 10s ease-in-out infinite alternate;
+  transition: transform 0.6s ease;
+  will-change: transform;
+}
+
+/* Keyframe animation */
+@keyframes heroMove {
+  0% {
+    transform: scale(1) translateX(0);
+  }
+  25% {
+    transform: scale(1.05) translateX(-10px);
+  }
+  50% {
+    transform: scale(1.1) translateX(10px);
+  }
+  75% {
+    transform: scale(1.05) translateX(-10px);
+  }
+  100% {
+    transform: scale(1) translateX(0);
+  }
+}
+
 /* === Responsive === */
 @media screen and (max-width: 1024px) {
   .xS_newsCard {
     flex: 0 0 calc(50% - 2rem);
   }
+  .logo{
+    width: 130px;
+  }
+  .yt_banner_wrap{
+    height: 30vh;
+  }
+  .opp{
+    margin-top: 20px;
+    padding-top: 20px;
+    padding-left: 30px;
+    padding-right: 30PX;
+    padding-bottom: 20PX;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 90%;
+  }
+  .opps{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
+
+  }
 }
 
 @media screen and (max-width: 768px) {
   .xS_newsWrapper {
-    gap: 1rem;
+    gap: 5px;
   }
   .xS_newsCard {
     flex: 0 0 100%;
   }
+}
+.notmobile{
+  display: none;
+  color: #c72127;
 }
